@@ -16,5 +16,6 @@
 		"partner.xml",
 		"group.xml",
 		"ir.model.access.csv",
+		"wizard/create_attendee.xml",
 	],
 }
