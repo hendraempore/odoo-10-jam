@@ -43,14 +43,17 @@
                                         <field name="duration" />
                                         <field name="seats" />
                                         <field name="active" />
+                                        <field name="state" />
                                     </tree>
                                     <form>
                                         <group>
+                                            <field name="instructor_id" />
                                             <field name="name" />
                                             <field name="start_date" />
                                             <field name="duration" />
                                             <field name="seats" />
                                             <field name="active" />
+                                            <field name="state" />
                                         </group>
                                     </form>
                                 </field>

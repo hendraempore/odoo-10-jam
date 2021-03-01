@@ -14,5 +14,7 @@
 		"session.xml",
 		"attendee.xml",
 		"partner.xml",
+		"group.xml",
+		"ir.model.access.csv",
 	],
 }
