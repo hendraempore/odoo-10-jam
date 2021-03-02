@@ -3,6 +3,7 @@
 	"version": "1.0",
 	"depends": [
 		"base",
+		"board",
 	],
 	"author": "hendra@empore.co.id",
 	"category": "Education",
@@ -17,5 +18,7 @@
 		"group.xml",
 		"ir.model.access.csv",
 		"wizard/create_attendee.xml",
+		"report/session.xml",
+		"dashboard.xml",
 	],
 }

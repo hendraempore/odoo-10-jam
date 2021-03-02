@@ -41,5 +41,15 @@
           	view_mode="form"
           	target="new"
           	key2="client_action_multi" /> -->
+        <!-- <record id="session_create_attendee_wizard" model="ir.actions.server">
+	        <field name="name">Add Attendees</field>
+	        <field name="type">ir.actions.server</field>
+	        <field name="model_id" ref="model_academic_attendee_wizard"/>
+	        <field name="binding_model_id" ref="model_academic_session"/>
+	        <field name="state">code</field>
+	        <field name="code">
+	                raise Warning(record)
+	        </field>
+	    </record> -->
     </data>
 </odoo>
