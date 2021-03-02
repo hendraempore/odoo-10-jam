@@ -16,6 +16,7 @@
                     <field name="seats" />
                     <field name="taken_seats" widget="progressbar" />
                     <field name="active" />
+                    <field name="state" />
                 </tree>
             </field>
         </record>
@@ -26,6 +27,12 @@
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Session">
+                    <header>
+                        <button string="Confirm" groups="academic.group_academic_user" type="object" states="draft" name="action_confirm" />
+                        <button string="Mark as Done" groups="academic.group_academic_manager" type="object" states="confirm" name="action_done" />
+                        <button string="Reject" groups="academic.group_academic_manager" type="object" states="confirm,done" name="action_draft" />
+                        <field name="state" widget="statusbar" />
+                    </header>
                     <sheet>
                         <div class="oe_title">
                             <label for="name" class="oe_edit_only" string="Session Name" />
@@ -38,7 +45,7 @@
                                 <field name="name" />
                                 <field name="instructor_id" domain="['|', ('is_instructor','=',True), ('category_id','ilike','pelatih')]" />
                                 <field name="course_id" />
-                                <field name="image_small" widget="image" class="oe_left oe_avatar" />
+                                <field name="image_small" widget="image" class="oe_left oe_avatar" groups="academic.group_academic_user" />
                             </group>
                             <group>
                                 <field name="start_date" />

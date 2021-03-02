@@ -1,0 +1,55 @@
+<odoo>
+    <data>
+        <record id="create_wizard_form" model="ir.ui.view">
+            <field name="name">create_wizard_form</field>
+            <field name="model">academic.attendee.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="session_ids" />
+                        <field name="attendee_ids">
+                            <tree string="Attendees" editable="bottom">
+                                <field name="partner_id" />
+                            </tree>
+                        </field>
+                    </group>
+                    <footer>
+                        <button name="action_add_attendee" type="object" string="Confirm" confirm="Anda yakin?" />
+                        <button type="special" special="cancel" string="Cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="create_attendee_wizard_action">
+            <field name="name">Add Attendee</field>
+            <field name="res_model">academic.attendee.wizard</field>
+            <!-- <field name="view_type">form</field> -->
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem
+			name="Add Attendee"
+			parent="academic_1"
+			id="create_attendee_wizard_menu"
+			sequence="50"
+			action="create_attendee_wizard_action" />
+		<!-- <act_window
+			id="session_create_attendee_wizard"
+          	name="Add Attendees"
+          	src_model="academic.session"
+          	res_model="academic.attendee.wizard"
+          	view_mode="form"
+          	target="new"
+          	key2="client_action_multi" /> -->
+        <!-- <record id="session_create_attendee_wizard" model="ir.actions.server">
+	        <field name="name">Add Attendees</field>
+	        <field name="type">ir.actions.server</field>
+	        <field name="model_id" ref="model_academic_attendee_wizard"/>
+	        <field name="binding_model_id" ref="model_academic_session"/>
+	        <field name="state">code</field>
+	        <field name="code">
+	                raise Warning(record)
+	        </field>
+	    </record> -->
+    </data>
+</odoo>
