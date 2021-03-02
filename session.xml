@@ -6,8 +6,8 @@
             <field name="type">tree</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <!-- <tree string="Session" colors="red: taken_seats &gt; 60; green:taken_seats &lt; 20"> -->
-                <tree string="Session">
+                <tree string="Session" colors="red: taken_seats &gt; 60; green:taken_seats &lt; 20">
+                <!-- <tree string="Session"> -->
                     <field name="name" />
                     <field name="instructor_id" />
                     <field name="course_id" />
@@ -73,7 +73,7 @@
                 </calendar>
             </field>
         </record>
-        <!-- <record id="view_academic_session_search" model="ir.ui.view">
+        <record id="view_academic_session_search" model="ir.ui.view">
             <field name="name">view_academic_session_search</field>
             <field name="model">academic.session</field>
             <field name="arch" type="xml">
@@ -84,7 +84,7 @@
                 	<filter string="Non zero duration" domain="[('duration','&gt;',0)]" />
                 </search>
             </field>
-        </record> -->
+        </record>
         <record id="view_academic_session_graph" model="ir.ui.view">
             <field name="name">view_academic_session_graph</field>
             <field name="model">academic.session</field>

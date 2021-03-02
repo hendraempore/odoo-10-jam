@@ -30,7 +30,7 @@
                 </form>
             </field>
         </record>
-        <!-- <record id="view_academic_attendee_search" model="ir.ui.view">
+        <record id="view_academic_attendee_search" model="ir.ui.view">
             <field name="name">academic.attendee.search</field>
             <field name="model">academic.attendee</field>
             <field name="type">search</field>
@@ -41,6 +41,6 @@
                     <filter string="Partner" domain="[]" context="{'group_by':'partner_id'}" />
                 </search>
             </field>
-        </record> -->
+        </record>
     </data>
 </odoo>

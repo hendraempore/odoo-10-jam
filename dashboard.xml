@@ -3,7 +3,7 @@
 		<record id="act_session_graph" model="ir.actions.act_window">
 			<field name="name">academic.session.graph</field>
 			<field name="res_model">academic.session</field>
-			<!-- <field name="view_type">form</field> -->
+			<field name="view_type">form</field>
 			<field name="view_mode">graph</field>
 			<field name="view_id" ref="view_academic_session_graph" />
 		</record>
@@ -31,7 +31,7 @@
 		<record id="open_board_session" model="ir.actions.act_window">
 			<field name="name">Session Dashboard</field>
 			<field name="model">board.board</field>
-			<!-- <field name="view_type">form</field> -->
+			<field name="view_type">form</field>
 			<field name="view_mode">form</field>
 			<field name="view_id" ref="board_session_form" />
 		</record>
