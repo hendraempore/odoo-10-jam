@@ -91,6 +91,7 @@
             <field name="arch" type="xml">
                 <graph string="Session" type="bar">
                     <field name="instructor_id" />
+                    <field name="duration" />
                 </graph>
             </field>
         </record>

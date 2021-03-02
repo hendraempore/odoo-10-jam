@@ -19,6 +19,6 @@
 		"ir.model.access.csv",
 		"wizard/create_attendee.xml",
 		"report/session.xml",
-		# "dashboard.xml",
+		"dashboard.xml",
 	],
 }
